@@ -40,5 +40,6 @@ jobs:
 
       - name: Build and test
         run: mvn -B verify
+        working-directory: ./ticketrush
         env:
           SPRING_DATASOURCE_URL: jdbc:postgresql://localhost:5433/ticketrush
